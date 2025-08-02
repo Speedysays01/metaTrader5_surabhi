@@ -191,3 +191,104 @@
   justify-content: flex-end;
   gap: 6px;
 }
+
+
+@media(max-width: 768px) {
+  .watchlistContainer {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+    
+  }
+
+  .watchlistContainer h2 {
+    font-size: 1.2rem;
+  }
+
+  .stockItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stockName, .stockPrice {
+    width: 100%;
+    text-align: left;
+  }
+
+  .actionButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+
+/* Toggle hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 18px;
+  background: #1a1a1a;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+  border-radius: 6px;
+}
+
+/* Control visibility on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .watchlistContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #1e1e2f;
+    color: white;
+    transition: width 0.3s ease;
+    z-index: 1000;
+    padding: 0;
+  }
+
+  .watchlistContainer.open {
+    width: 250px;
+    padding: 20px;
+  }
+
+  .watchlistContainer.closed {
+    width: 0;
+    padding: 0;
+  }
+
+  .watchlistContainer h2 {
+    display: none;
+  }
+
+  .stockItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stockName, .stockPrice {
+    width: 100%;
+    text-align: left;
+  }
+
+  .actionButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

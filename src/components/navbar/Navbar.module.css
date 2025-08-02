@@ -2,88 +2,88 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #0b0e16;
-  color: #e0e0e0;
-  box-shadow: 0 2px 8px rgba(0, 188, 212, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  padding: 12px 24px;
+  background-color: #1a1a1a;
+  color: white;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 1.25rem;
-  background-color: #1b1f2b;
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  color: #00e5ff;
-  box-shadow: 0 0 6px rgba(0, 188, 212, 0.15);
+  font-size: 20px;
+  background-color: #ffffff22;
+  padding: 8px 12px;
+  border-radius: 6px;
 }
 
-.links {
+.desktopLinks {
   display: flex;
-  gap: 1.2rem;
-  justify-self: center;
-  align-self: center;
-  margin-left: 15rem;
+  gap: 16px;
 }
 
-.links a {
+.desktopLinks a {
   text-decoration: none;
-  color: #e0e0e0;
+  color: white;
   font-weight: 500;
-  font-size: 1rem;
-  position: relative;
-  transition: color 0.3s;
 }
 
-.links a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #00bcd4;
-  transition: width 0.3s;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-}
-
-.links a:hover {
-  color: #00e5ff;
-}
-
-.links a:hover::after {
-  width: 100%;
+.desktopLinks a:hover {
+  color: #00bcd4;
 }
 
 .brand {
-  font-size: 0.9rem;
+  font-size: 14px;
   font-style: italic;
   color: #888;
-  letter-spacing: 1px;
 }
 
-/* 🌐 Mobile Responsive */
+.mobileMenuIcon {
+  display: none;
+  cursor: pointer;
+  margin-left: 6rem;
+  margin-right: 2rem;
+}
+
+/* Mobile Sidebar */
+.mobileSidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 220px;
+  background-color: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-left: 2px solid #00bcd4;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+  padding-top: 5rem;
+}
+
+.mobileSidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 0;
+  border-bottom: 1px solid #444;
+}
+
+.mobileSidebar a:hover {
+  color: #00bcd4;
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
+  .desktopLinks {
+    display: none;
   }
 
-  .logo {
-    margin-bottom: 0.5rem;
-  }
-
-  .links {
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .brand {
-    align-self: flex-end;
+  .mobileMenuIcon {
+    display: block;
+    z-index: 1000;
   }
 }

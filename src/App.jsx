@@ -8,19 +8,22 @@ import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import WatchList from "./components/watchlist/WatchList";
 import Logout from "./components/logout/Logout";
+import "./App.css"; // Assuming you have some global styles
 const App = () => {
   return (
     <>
       <Navbar />
-      <WatchList/>
+      <WatchList />
       <Routes>
       
         <Route path="/" element={<Dashboard />} />
         <Route path="/holdings" element={<Holdings />} />
         <Route path="/funds" element={<Funds />} />
+        <Route path="/watchlist" element={<WatchList/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/logout" element={<Logout />} />
+
       </Routes>
     </>
   );

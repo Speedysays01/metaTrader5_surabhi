@@ -79,6 +79,10 @@ p {
 
 /* 🌐 Mobile Responsive */
 @media (max-width: 600px) {
+  .loginContainer{
+    width:100vw;
+    height: 100vh;
+  }
   .form {
     padding: 1.5rem;
     max-width: 90vw;
