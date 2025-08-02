@@ -1,0 +1,193 @@
+.watchlistContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #1e1e2f;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.watchlistContainer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+  text-align: center;
+}
+
+.watchlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 1rem;
+}
+.stockItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a3d;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.stockName {
+  font-weight: bold;
+  flex: 1;
+}
+
+.buyButton {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  padding: 5px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 0.85rem;
+  transition: background 0.3s;
+}
+
+.buyButton:hover {
+  background-color: #009624;
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.popup h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.popup label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.popup input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.popupButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.confirmBtn {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.confirmBtn:hover {
+  background-color: #0097a7;
+}
+
+.cancelBtn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cancelBtn:hover {
+  background-color: #c62828;
+}
+\.actionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.sellButton {
+  background-color: rgb(255, 85, 85);
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sellButton:hover {
+  background-color: rgb(225, 50, 50);
+}
+
+
+
+
+
+
+
+
+.stockItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a3d;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  gap: 8px;
+}
+
+.stockName {
+  font-weight: bold;
+  flex: 1;
+}
+
+.stockPrice {
+  flex: 1;
+  text-align: center;
+  color: lightgreen;
+}
+
+.actionButtons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+}

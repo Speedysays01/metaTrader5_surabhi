@@ -1,0 +1,73 @@
+.holdingsContainer {
+  padding: 2rem;
+  width: 80vw;
+  margin-left: auto;
+  background-color: #0b0e16;
+  min-height: 100vh;
+  color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00bcd4;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.heading{
+  margin-top: 1rem;
+}
+.holdingsTable {
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #1f2433;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  font-size: 0.95rem;
+}
+
+.holdingsTable th {
+  background-color: #2d3347;
+  color: #00e5ff;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 1px solid #444c63;
+}
+
+.holdingsTable td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #333849;
+  color: #e0e0e0;
+}
+
+.holdingsTable tr:last-child td {
+  border-bottom: none;
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 768px) {
+  .holdingsContainer {
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .holdingsTable {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .holdingsTable th,
+  .holdingsTable td {
+    padding: 0.5rem;
+  }
+}

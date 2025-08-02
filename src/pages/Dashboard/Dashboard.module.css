@@ -1,0 +1,137 @@
+.dashboardContainer {
+  padding: 2rem;
+  width: 80vw;
+  margin-left: auto; /* right-aligned since watchlist is on left */
+  background-color: #0b0e16;
+  min-height: 100vh;
+  color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #00bcd4;
+  
+}
+
+.heading{
+  align-self: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+.card {
+  background-color: #1b1f2b;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 188, 212, 0.2);
+  margin-bottom: 2rem;
+  justify-self: center;
+}
+
+.card p {
+  margin: 0.6rem 0;
+  font-size: 1.4rem;
+  color: #cfcfcf;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+  border-bottom: 1px solid #2a2f45;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.transactionTable {
+  width: 95%;
+  border-collapse: collapse;
+  background-color: #1f2433;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  align-self: center;
+  justify-self: center;
+}
+
+.transactionTable th {
+  background-color: #2d3347;
+  color: #00e5ff;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 1px solid #444c63;
+}
+
+.transactionTable td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #333849;
+}
+
+.transactionTable tr:last-child td {
+  border-bottom: none;
+}
+
+.profit {
+  color: #00e676;
+  font-weight: bold;
+}
+
+.loss {
+  color: #ff5252;
+  font-weight: bold;
+}
+
+
+.sub{
+  display: flex;
+  width: 50rem;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .dashboardContainer {
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  .transactionTable {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .transactionTable th,
+  .transactionTable td {
+    padding: 0.5rem;
+  }
+
+  .sub {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+}
