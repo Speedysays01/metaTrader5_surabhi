@@ -9,6 +9,8 @@
   z-index: 1000;
   width: 100%;
   overflow-x: hidden;
+  position: fixed;
+  margin-bottom: 3rem;
 }
 
 .logo {

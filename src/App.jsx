@@ -8,6 +8,7 @@ import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import WatchList from "./components/watchlist/WatchList";
 import Logout from "./components/logout/Logout";
+import Footer from "./components/footer/Footer";
 import "./App.css"; // Assuming you have some global styles
 const App = () => {
   return (
@@ -23,8 +24,9 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/logout" element={<Logout />} />
-
+      
       </Routes>
+        <Footer/>
     </>
   );
 };

@@ -6,13 +6,13 @@ const initialStocks = [
   { name: "INFY", price: 1555.45 },
   { name: "ONGC", price: 116.8 },
   { name: "TCS", price: 3194.8 },
-  { name: "HDFCBANK", price: 1578.1 },
+  { name: "HDFC", price: 1578.1 },
   { name: "ITC", price: 439.7 },
-  { name: "RELIANCE", price: 2892.0 },
+  { name: "HCLT", price: 2892.0 },
   { name: "SBIN", price: 725.6 },
   { name: "WIPRO", price: 462.3 },
-  { name: "HCLTECH", price: 1401.5 },
-  { name: "ADANIENT", price: 2824.9 },
+  { name: "ICIC", price: 1401.5 },
+  { name: "ADAN", price: 2824.9 },
 ];
 
 const getRandomChange = () => +(Math.random() * 3 - 1.5).toFixed(2);

@@ -38,7 +38,6 @@ const Navbar = () => {
           <Link to="/">Dashboard</Link>
           <Link to="/holdings">Holdings</Link>
           <Link to="/funds">Funds</Link>
-          <Link to="/watchlist">Watchlist</Link>
           <Link to="/login">Login</Link>
           <Link to="/logout">Logout</Link>
         </div>

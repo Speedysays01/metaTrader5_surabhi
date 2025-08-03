@@ -10,6 +10,7 @@
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
   overflow-y: auto;
   z-index: 999;
+  padding-top: 4rem;
 }
 
 .watchlistContainer h2 {
@@ -38,6 +39,7 @@
   border-radius: 6px;
   margin-bottom: 10px;
   font-size: 0.95rem;
+  width: 100%;
 }
 
 .stockName {
