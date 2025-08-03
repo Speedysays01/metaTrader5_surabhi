@@ -12,7 +12,7 @@ const initialStocks = [
   { name: "SBIN", price: 725.6 },
   { name: "WIPRO", price: 462.3 },
   { name: "HCLTECH", price: 1401.5 },
-  { name: "ADANIENT", price: 2824.0 },
+  { name: "ADANIENT", price: 2824.9 },
 ];
 
 const getRandomChange = () => +(Math.random() * 3 - 1.5).toFixed(2);
@@ -70,7 +70,7 @@ const WatchList = () => {
     const stock = stocks.find((s) => s.name === activeStock);
 
     try {
-      await axios.post("http://localhost:3000/newOrder", {
+      await axios.post("https://meta-trader-backend.onrender.com/newOrder", {
         name: activeStock,
         qty: quantity,
         price: stock.price,
