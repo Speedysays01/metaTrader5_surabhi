@@ -29,7 +29,7 @@ const Holdings = () => {
     // Fetch user name
     const fetchUserName = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/user/${userId}`);
+        const res = await axios.get(`https://meta-trader-backend.onrender.com/user/${userId}`);
         setUserName(res.data.name);
       } catch (err) {
         console.error("Failed to fetch user:", err);
